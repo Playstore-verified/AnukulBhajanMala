@@ -17,11 +17,25 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <title>सत्यानुसरण (1)</title>
 
 <style>
+
+*{
+
+  box-sizing:border-box;
+
+  -webkit-user-select:none;
+
+  -ms-user-select:none;
+
+  user-select:none;
+
+  -webkit-touch-callout:none;
+
+}
 
 body{
 
@@ -35,21 +49,19 @@ body{
 
 .page{
 
-  width:90%;
+  width:95%;
 
-  margin:20px auto;
+  margin:15px auto;
 
   background:#d9d9d9;
 
-  border:6px solid #000;
+  border:5px solid #000;
 
-  border-radius:25px;
+  border-radius:22px;
 
-  padding:50px 65px 120px 65px;
+  padding:35px 22px 100px 22px;
 
   position:relative;
-
-  box-sizing:border-box;
 
 }
 
@@ -57,7 +69,7 @@ body{
 
   text-align:center;
 
-  margin-bottom:45px;
+  margin-bottom:30px;
 
 }
 
@@ -65,9 +77,9 @@ body{
 
   border:3px solid #000;
 
-  padding:6px 35px;
+  padding:6px 25px;
 
-  font-size:36px;
+  font-size:28px;
 
   font-weight:bold;
 
@@ -75,11 +87,11 @@ body{
 
 p{
 
-  font-size:22px;
+  font-size:18px;
 
   line-height:1.9;
 
-  margin:14px 0;
+  margin:12px 0;
 
   text-align:justify;
 
@@ -87,9 +99,9 @@ p{
 
 .author{
 
-  margin-top:25px;
-
   font-weight:bold;
+
+  margin-top:15px;
 
 }
 
@@ -103,11 +115,13 @@ p{
 
   transform:translateX(-50%);
 
-  border:3px solid #000;
+  border:2px solid #000;
 
-  padding:5px 25px;
+  padding:4px 15px;
 
-  font-size:18px;
+  font-size:14px;
+
+  text-align:center;
 
   background:#d9d9d9;
 
@@ -117,21 +131,23 @@ p{
 
   position:absolute;
 
-  right:15px;
+  right:10px;
 
-  bottom:15px;
+  bottom:10px;
 
-  border:3px solid #000;
+  border:2px solid #000;
 
-  width:38px;
+  width:32px;
 
-  height:38px;
+  height:32px;
 
   border-radius:50%;
 
   text-align:center;
 
-  line-height:34px;
+  line-height:30px;
+
+  font-size:14px;
 
   font-weight:bold;
 
@@ -139,7 +155,27 @@ p{
 
 }
 
+/* extra protection */
+
+body, img {
+
+  pointer-events:none;
+
+}
+
 </style>
+
+<script>
+
+document.addEventListener("contextmenu", e => e.preventDefault());
+
+document.addEventListener("keydown", e => {
+
+  if (e.ctrlKey && ['c','u','s','p','a','x'].includes(e.key.toLowerCase())) e.preventDefault();
+
+});
+
+</script>
 
 </head>
 
@@ -157,7 +193,7 @@ p{
 
   <p class="author">श्रीश्रीठाकुर</p>
 
-  <p>भारत की अवनति (Degeneration) तभी से आरम्भ हुई जब से भारतवासियों के लिये अमूर्त्त भगवान असीम हो उठें - ऋषियों को छोड़ कर ऋषिवाद की उपासना आरम्भ हुई। भारत ! यदि भविष्यत्-कल्याण का आह्वान करना चाहते हो, तो सम्प्रदायगत विरोध को भूल कर जगत के पूर्व-पूर्व गुरुओं के प्रति श्रद्धासम्पन्न होओ और अपने मूर्त्त एवं जीवन्त गुरु वा भगवान में आसक्त (attached) होओ, और उन्हें ही स्वीकार करो- जो उनसे प्रेम करते हैं। कारण, पूर्ववर्ती को अधिकार करके ही परवर्ती का आविर्भाव होता है।</p>
+  <p>भारत की अवनति (Degeneration) तभी से आरम्भ हुई जब से भारतवासियों के लिये अमूर्त्त भगवान असीम हो उठें — ऋषियों को छोड़ कर ऋषिवाद की उपासना आरम्भ हुई। भारत ! यदि भविष्यत्-कल्याण का आह्वान करना चाहते हो, तो सम्प्रदायगत विरोध को भूल कर जगत के पूर्व-पूर्व गुरुओं के प्रति श्रद्धासम्पन्न होओ और अपने मूर्त्त एवं जीवन्त गुरु वा भगवान में आसक्त (attached) होओ, और उन्हें ही स्वीकार करो — जो उनसे प्रेम करते हैं। कारण, पूर्ववर्ती को अधिकार करके ही परवर्ती का आविर्भाव होता है।</p>
 
   <div class="footer">
 
